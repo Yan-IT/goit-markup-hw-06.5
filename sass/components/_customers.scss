@@ -1,0 +1,47 @@
+.sec-customers {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.customers-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+}
+
+.customers-item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.customers-item-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+
+  border: 1px solid currentColor;
+  border-radius: 4px;
+
+  color: #afb1b8;
+
+  transition: color var(--tran);
+}
+
+.customers-item-box:hover,
+.customers-item-box:focus {
+  color: var(--accent-color);
+}
+
+.customers_icons {
+  /* margin: 16px 32px; */
+  fill: currentColor;
+}
