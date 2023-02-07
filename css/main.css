@@ -44,6 +44,10 @@ img {
   text-decoration: none;
 }
 
+.list {
+  list-style: none;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -704,6 +708,10 @@ img {
   -webkit-transition: opacity var(--tran), visibility var(--tran);
   transition: opacity var(--tran), visibility var(--tran);
 }
+.backdrop.is-hidden .modal {
+  -webkit-transform: translate(-50%, -50%) scale(1.1);
+          transform: translate(-50%, -50%) scale(1.1);
+}
 
 .modal {
   position: absolute;
@@ -722,11 +730,6 @@ img {
   transition: -webkit-transform var(--tran);
   transition: transform var(--tran);
   transition: transform var(--tran), -webkit-transform var(--tran);
-}
-
-.backdrop.is-hidden .modal {
-  -webkit-transform: translate(-50%, -50%) scale(1.1);
-          transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal-close {

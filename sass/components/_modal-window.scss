@@ -7,6 +7,10 @@
   background-color: rgba(0, 0, 0, 0.2);
 
   transition: opacity var(--tran), visibility var(--tran);
+
+  &.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+  }
 }
 
 .modal {
@@ -24,10 +28,6 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform var(--tran);
-}
-
-.backdrop.is-hidden .modal {
-  transform: translate(-50%, -50%) scale(1.1);
 }
 
 .modal-close {
