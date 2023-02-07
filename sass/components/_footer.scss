@@ -25,6 +25,10 @@
   color: var(--accent-color);
 }
 
+.footer__address-list li:not(:last-child) {
+  margin-bottom: 9px;
+}
+
 .footer__address-list {
   @include font(14px, null, 1.71, null);
   list-style: none;

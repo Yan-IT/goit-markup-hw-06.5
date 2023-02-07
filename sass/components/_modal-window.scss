@@ -90,7 +90,7 @@
     border-color: var(--accent-color);
   }
 
-  &:focus + .input-icon {
+  &:focus + .modal__input-icon {
     fill: var(--accent-color);
   }
 

@@ -77,8 +77,8 @@
   }
 }
 
-.navigation__contact {
-  color: var(--title-text-color);
+.navigation__link {
+  color: var(--primary-text-color);
 }
 
 .navigation__link--current {
@@ -95,6 +95,10 @@
     left: 0;
     bottom: 0;
   }
+}
+
+.navigation__contact {
+  color: var(--title-text-color);
 }
 
 .navigation__icon {
