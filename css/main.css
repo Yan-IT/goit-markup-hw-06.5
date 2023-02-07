@@ -71,8 +71,8 @@ img {
 .logo {
   color: #000000;
   font-family: Raleway, sans-serif;
-  font-weight: 700;
   font-size: 26px;
+  font-weight: 700;
   line-height: 1.19;
   text-decoration: none;
 }
@@ -140,8 +140,8 @@ img {
           align-items: center;
   padding-top: 30px;
   padding-bottom: 30px;
-  font-weight: 500;
   font-size: 14px;
+  font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   text-decoration: none;
@@ -189,8 +189,8 @@ img {
   color: #ffffff;
   background-color: var(--accent-color);
   font-family: inherit;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   width: 216px;
@@ -209,13 +209,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   padding-top: 200px;
   padding-bottom: 200px;
   height: 600px;
@@ -232,11 +232,11 @@ img {
 
 .hero-title {
   color: #ffffff;
-  font-weight: 900;
   font-size: 44px;
+  font-weight: 900;
   line-height: 1.36;
-  font-family: inherit;
   letter-spacing: 0.06em;
+  font-family: inherit;
   text-transform: uppercase;
   text-align: center;
   width: 696px;
@@ -256,8 +256,8 @@ img {
 }
 .feature-list .title {
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   margin-bottom: 10px;
@@ -276,12 +276,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 270px;
   content: "";
   height: 120px;
@@ -315,8 +315,8 @@ img {
 
 .section-work {
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   padding-bottom: 50px;
@@ -339,6 +339,15 @@ img {
 
 .work-item-overlay {
   position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   height: 70px;
   width: 100%;
   background-color: rgba(47, 48, 58, 0.8);
@@ -348,15 +357,6 @@ img {
   font-size: 14px;
   line-height: 1.14;
   bottom: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
 }
 
 .sec3 {
@@ -367,8 +367,8 @@ img {
 
 .section-team {
   color: var(--primary-text-color);
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
   text-align: center;
   margin-bottom: 50px;
@@ -416,12 +416,12 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .person-soc-items {
@@ -434,19 +434,19 @@ img {
 }
 
 .person-soc-link {
-  width: 100%;
-  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  border-radius: 50%;
-  color: #afb1b8;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  color: #afb1b8;
   -webkit-transition: background-color var(--tran), color var(--tran);
   transition: background-color var(--tran), color var(--tran);
 }
@@ -465,11 +465,11 @@ img {
 }
 
 .customers-title {
-  font-weight: 700;
   font-size: 36px;
+  font-weight: 700;
   line-height: 1.17;
-  text-align: center;
   letter-spacing: 0.03em;
+  text-align: center;
   margin-bottom: 50px;
 }
 
@@ -544,9 +544,9 @@ img {
 }
 
 .footer-address-list {
-  list-style: none;
   font-size: 14px;
   line-height: 1.71;
+  list-style: none;
   font-style: normal;
 }
 
@@ -579,8 +579,8 @@ img {
 }
 
 .footer-subtitle {
-  font-weight: 700;
   font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -765,8 +765,8 @@ img {
 }
 
 .modal-title {
-  font-weight: 700;
   font-size: 20px;
+  font-weight: 700;
   line-height: 1.15;
   text-align: center;
   color: var(--primary-text-color);
@@ -943,8 +943,8 @@ img {
   margin-right: auto;
   margin-top: 30px;
   padding: 10px 52px;
-  font-weight: 700;
   font-size: 16px;
+  font-weight: 700;
   line-height: 1.88;
   letter-spacing: 0.06em;
   color: #fff;
@@ -1050,10 +1050,13 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  list-style: none;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  list-style: none;
   margin-bottom: 34px;
 }
 
@@ -1065,8 +1068,8 @@ img {
   color: #212121;
   background-color: #f5f4fa;
   font-family: inherit;
-  font-weight: 500;
   font-size: 16px;
+  font-weight: 500;
   line-height: 1.62;
   text-align: center;
   padding: 6px 22px;

@@ -28,9 +28,8 @@
 }
 
 .footer-address-list {
+  @include font(14px, null, 1.71, null);
   list-style: none;
-  font-size: 14px;
-  line-height: 1.71;
   font-style: normal;
 }
 
@@ -67,9 +66,7 @@
 }
 
 .footer-subtitle {
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.14;
+  @include font(14px, 700, 1.14, null);
   text-transform: uppercase;
   color: var(--primary-white-color);
 
@@ -116,8 +113,7 @@
 }
 
 .form-subscribe-footer {
-  display: flex;
-  align-items: center;
+  @include flex-align;
   text-align: center;
   letter-spacing: 0.06em;
 }
@@ -142,8 +138,7 @@
 }
 
 .btn-subscribe {
-  display: flex;
-  align-items: center;
+  @include flex-align;
   text-align: center;
 
   width: 200px;

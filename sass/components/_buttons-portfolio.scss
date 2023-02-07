@@ -1,7 +1,6 @@
 .button-list {
-  display: flex;
+  @include flex-justify;
   list-style: none;
-  justify-content: center;
 
   margin-bottom: 34px;
 }
@@ -14,9 +13,7 @@
   color: #212121;
   background-color: #f5f4fa;
   font-family: inherit;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 1.62;
+  @include font(16px, 500, 1.62, null);
   text-align: center;
 
   padding: 6px 22px;
