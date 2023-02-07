@@ -2,7 +2,7 @@
   text-align: center;
 }
 
-.container.sec-hero {
+.container-hero {
   @include flex-align;
   flex-direction: column;
 
@@ -21,7 +21,7 @@
   background-color: #2f303a;
 }
 
-.hero-title {
+.hero__title {
   color: #ffffff;
   @include font(44px, 900, 1.36, 0.06em);
   font-family: inherit;

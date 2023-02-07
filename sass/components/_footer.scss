@@ -1,6 +1,4 @@
-/* footer: */
-
-.footer-section-address {
+.footer {
   background-color: #2f303a;
   padding: 60px 0;
 }
@@ -23,17 +21,17 @@
   padding-bottom: 20px;
 }
 
-.footer-logo-blue {
+.footer-logo--blue {
   color: var(--accent-color);
 }
 
-.footer-address-list {
+.footer__address-list {
   @include font(14px, null, 1.71, null);
   list-style: none;
   font-style: normal;
 }
 
-.footer-address-link {
+.footer__address-link {
   color: #ffffff;
   font-size: 14px;
   line-height: 1.71;
@@ -47,7 +45,7 @@
   }
 }
 
-.footer-contacts {
+.footer__contact {
   color: rgba(255, 255, 255, 0.6);
   font-size: 14px;
   line-height: 1.71;
@@ -65,7 +63,7 @@
   margin-left: 70px;
 }
 
-.footer-subtitle {
+.join__subtitle {
   @include font(14px, 700, 1.14, null);
   text-transform: uppercase;
   color: var(--primary-white-color);
@@ -73,13 +71,14 @@
   margin-bottom: 20px;
 }
 
-.join-list {
+.join__list {
   display: flex;
   justify-content: center;
 }
-.join-item {
+.join__item {
 }
-.join-button {
+
+.join__button {
   padding: 0;
   border: none;
   width: 44px;
@@ -107,18 +106,18 @@
   padding: 0;
 }
 
-.email-input {
+.form-subscribe {
   padding-top: 72px;
   padding-left: 93px;
 }
 
-.form-subscribe-footer {
+.form-subscribe__wrap {
   @include flex-align;
   text-align: center;
   letter-spacing: 0.06em;
 }
 
-.footer-email {
+.form-subscribe__email {
   width: 358px;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
@@ -155,6 +154,6 @@
   margin-left: 12px;
 }
 
-.btn-subscribe-icon {
+.btn-subscribe__icon {
   margin-left: 10px;
 }

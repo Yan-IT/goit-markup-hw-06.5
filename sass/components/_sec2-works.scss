@@ -1,27 +1,27 @@
-.sec2 {
+.work {
   padding-bottom: 94px;
 }
-.section-work {
+.work__title {
   color: var(--primary-text-color);
   @include font(36px, 700, 1.17, null);
   text-align: center;
   padding-bottom: 50px;
 }
 
-.work-list {
+.work__list {
   display: flex;
   list-style: none;
 }
 
-.work-list .work-item:not(:last-child) {
+.work__list .work__item:not(:last-child) {
   margin-right: 30px;
 }
 
-.work-item-wrap {
+.work__wrap {
   position: relative;
 }
 
-.work-item-overlay {
+.work__overlay {
   position: absolute;
 
   @include flex-align-justify;

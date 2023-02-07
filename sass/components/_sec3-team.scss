@@ -1,10 +1,10 @@
-.sec3 {
+.team {
   background-color: #f5f4fa;
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
-.section-team {
+.team__title {
   color: var(--primary-text-color);
   @include font(36px, 700, 1.17, null);
   text-align: center;
@@ -12,29 +12,29 @@
   margin-bottom: 50px;
 }
 
-.section-team-list {
+.team__list {
   display: flex;
   list-style: none;
-
-  & .title {
-    color: var(--primary-text-color);
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    margin-bottom: 10px;
-  }
-
-  & .profession {
-    color: var(--title-text-color);
-    font-size: 16px;
-    line-height: 1.18;
-    text-align: center;
-    margin-bottom: 16px;
-  }
 }
 
-.section-team-list .person {
+.person__title {
+  color: var(--primary-text-color);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.person__profession {
+  color: var(--title-text-color);
+  font-size: 16px;
+  line-height: 1.18;
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.person {
   width: 270px;
 
   background-color: #ffffff;
@@ -43,28 +43,28 @@
   border-radius: 0px 0px 4px 4px;
 }
 
-.section-team-list .person + .person {
+.person + .person {
   margin-left: 30px;
 }
 
-.person-content {
+.person__content {
   padding: 30px 0;
 }
 
-.person-soc-list {
+.person__soc-list {
   @include flex-align-justify;
 }
 
-.person-soc-items {
+.person__soc-item {
   width: 44px;
   height: 44px;
 }
 
-.person-soc-items:not(:last-child) {
+.person__soc-item:not(:last-child) {
   margin-right: 10px;
 }
 
-.person-soc-link {
+.person__soc-link {
   @include flex-align-justify;
 
   width: 100%;
@@ -82,6 +82,6 @@
   }
 }
 
-.soc_icons {
+.soc-icons {
   fill: currentColor;
 }

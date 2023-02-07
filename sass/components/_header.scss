@@ -1,5 +1,3 @@
-/*  Header: */
-
 /* Logo */
 
 .logo {
@@ -13,7 +11,7 @@
   }
 }
 
-.logo-blue {
+.logo--blue {
   color: var(--accent-color);
 
   &:hover {
@@ -26,41 +24,44 @@
 .header {
   border-bottom: 1px solid #ececec;
 }
-.main-nav {
+
+.navigation {
   @include flex-align;
 }
 
-.site-nav-list {
+.navigation__list {
   display: flex;
   list-style: none;
+  margin-left: 93px;
 
-  & .item + .item {
+  & .navigation__item + .navigation__item {
     margin-left: 50px;
   }
 }
 
-/* .site-nav-list .item {
+/* .navigation__list .navigation__item {
   margin-right: 50px;
 }
 
-.site-nav-list .item:last-child {
+.navigation__list .navigation__item:last-child {
   margin-right: 0;
 } */
 
-/* .site-nav-list .item:not(:last-child) {
+/* .navigation__list .navigation__item:not(:last-child) {
   margin-right: 50px;
 } */
 
-.site-nav-list.pages {
-  margin-left: 93px;
-}
-
-.site-nav-list.contacts {
+.navigation__contacts {
+  display: flex;
   margin-left: auto;
+
+  & .navigation__item + .navigation__item {
+    margin-left: 50px;
+  }
 }
 
-.site-nav-list .link,
-.contact {
+.navigation__link,
+.navigation__contact {
   position: relative;
 
   display: inline-flex;
@@ -69,44 +70,34 @@
   padding-bottom: 30px;
   @include font(14px, 500, 1.14, 0.02em);
   text-decoration: none;
-
   transition: color var(--tran);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
-.site-nav-list .link {
-  color: var(--primary-text-color);
-}
-
-.site-nav-list .contact {
+.navigation__contact {
   color: var(--title-text-color);
 }
 
-.site-nav-list .link:hover,
-.site-nav-list .link:focus,
-.contact:hover,
-.contact:focus {
+.navigation__link--current {
   color: var(--accent-color);
+
+  &::after {
+    position: absolute;
+
+    content: '';
+    width: 100%;
+    height: 4px;
+    background-color: var(--accent-color);
+    border-radius: 2px;
+    left: 0;
+    bottom: 0;
+  }
 }
 
-.site-nav-list .link.current {
-  color: var(--accent-color);
-}
-
-.site-nav-list .link.current::after {
-  position: absolute;
-
-  content: '';
-  width: 100%;
-  height: 4px;
-  background-color: var(--accent-color);
-  border-radius: 2px;
-  left: 0;
-  bottom: 0;
-}
-
-.header_icon {
+.navigation__icon {
   margin-right: 10px;
   fill: currentColor;
 }
-
-/* End of header. */
