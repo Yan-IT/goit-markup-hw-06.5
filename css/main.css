@@ -1055,10 +1055,11 @@ img {
   font-size: 16px;
   font-weight: 500;
   line-height: 1.62;
+  letter-spacing: 0.03em;
   text-align: center;
-  padding: 6px 22px;
+  padding: 6px 25px;
   border-radius: 4px;
-  border: 2px solid transparent;
+  border: none;
   -webkit-transition: color var(--tran), background-color var(--tran), -webkit-box-shadow var(--tran);
   transition: color var(--tran), background-color var(--tran), -webkit-box-shadow var(--tran);
   transition: color var(--tran), background-color var(--tran), box-shadow var(--tran);
