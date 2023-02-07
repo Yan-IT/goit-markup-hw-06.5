@@ -41,11 +41,11 @@
   text-decoration: none;
 
   transition: color var(--tran);
-}
 
-.footer-address-link:hover,
-.footer-address-link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .footer-contacts {
@@ -55,11 +55,11 @@
   text-decoration: none;
 
   transition: color var(--tran);
-}
 
-.footer-contacts:hover,
-.footer-contacts:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .join {
@@ -95,12 +95,12 @@
   align-items: center;
 
   transition: background-color var(--tran);
-}
 
-.join-button:hover,
-.join-button:focus {
-  background-color: var(--accent-color);
-  /* fill: var(--primary-white-color); */
+  &:hover,
+  &:focus {
+    background-color: var(--accent-color);
+    /* fill: var(--primary-white-color); */
+  }
 }
 
 .join-link {
@@ -135,10 +135,10 @@
   background-color: transparent;
 
   padding-left: 16px;
-}
 
-.footer-email::placeholder {
-  color: rgba(255, 255, 255, 0.6);
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
 }
 
 .btn-subscribe {

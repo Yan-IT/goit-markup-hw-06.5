@@ -34,14 +34,13 @@
   color: #afb1b8;
 
   transition: color var(--tran);
-}
 
-.customers-item-box:hover,
-.customers-item-box:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .customers_icons {
-  /* margin: 16px 32px; */
   fill: currentColor;
 }

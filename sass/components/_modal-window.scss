@@ -83,18 +83,27 @@
   outline: transparent;
   font-size: 12px;
   transition: border-color var(--tran);
-}
 
-.modal-input::placeholder {
-  font-size: 12px;
-}
+  &::placeholder {
+    font-size: 12px;
+  }
 
-.modal-input:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.modal-input:focus + .input-icon {
-  fill: var(--accent-color);
+  &:focus + .input-icon {
+    fill: var(--accent-color);
+  }
+
+  &:not(:placeholder-shown):not(:focus):valid,
+  &:not(:placeholder-shown):not(:focus):valid {
+    background-color: rgba(49, 219, 49, 0.158);
+  }
+
+  &:not(:placeholder-shown):not(:focus):invalid {
+    background-color: rgba(219, 58, 49, 0.158);
+  }
 }
 
 .input-text {
@@ -135,36 +144,17 @@
   transition: border-color var(--tran);
 
   resize: none;
-}
 
-.modal-comment:focus {
-  border-color: var(--accent-color);
-}
+  &:focus {
+    border-color: var(--accent-color);
+  }
 
-.modal-comment::placeholder {
-  font-size: 12px;
-  line-height: 1.16;
-  letter-spacing: 0.01em;
-  color: rgba(117, 117, 117, 0.5);
-}
-
-.modal-input:not(:placeholder-shown):not(:focus):valid,
-.modal-comment:not(:placeholder-shown):not(:focus):valid {
-  background-color: rgba(49, 219, 49, 0.158);
-}
-
-.modal-input:not(:placeholder-shown):not(:focus):invalid {
-  background-color: rgba(219, 58, 49, 0.158);
-}
-
-.modal-politic-label::before {
-  content: '';
-  width: 16px;
-  height: 16px;
-  border: 2px solid var(--primary-text-color);
-  border-radius: 2px;
-  margin-left: 12px;
-  margin-right: 8px;
+  &::placeholder {
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+    color: rgba(117, 117, 117, 0.5);
+  }
 }
 
 .modal-politic-label {
@@ -174,6 +164,16 @@
 
   display: flex;
   align-items: center;
+
+  &::before {
+    content: '';
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--primary-text-color);
+    border-radius: 2px;
+    margin-left: 12px;
+    margin-right: 8px;
+  }
 }
 
 .check-link {
